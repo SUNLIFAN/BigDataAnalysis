@@ -2,6 +2,7 @@ package org
 
 import org.apache.spark.SparkConf
 import org.apache.spark.SparkContext
+import java.io.PrintWriter
 
 object Main {
   def main(args : Array[String]) : Unit = {
@@ -18,6 +19,6 @@ object Main {
     val reduced_rdd = intermediate_rdd4.reduceByKey((a, b)=>a + b)
 
     //print out result
-    reduced_rdd.foreach(println)
+    reduced_rdd.coalesce(1).saveAsTextFile("output")
   }
 }

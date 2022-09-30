@@ -34,9 +34,15 @@ Dettmers et al., 2018; Bansal et al., 2019; Balaževi´c et al., 2019; Yao et al
 
 然而，目前主流的方法取得较好的效果都需要较高维度的表示方法，而高维在处理大的知识图谱时会带来可扩展性问题（scalability）。
 
+本文需要解决的问题是把知识图谱编码成一个相对低维的表示。
+
 ## 输入、输出、模型算法描述以及框架图
 
 ## 评价指标以及计算公式
+
+Mean Reciprocal Rate and  Hits@k ratios, both with filtered setting
+
+
 
 ## 对比方法及引用出处
 

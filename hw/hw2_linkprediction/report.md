@@ -46,22 +46,44 @@
 
 ### 算法描述及框架图
 
-算法流程：
+#### 算法流程：
 
-1. 给每个实体和联系分配一个嵌入向量
+预测阶段：
+
+1. 给每个实体和联系分配一个 d 维的嵌入向量
 
 2. 考虑每个 (s,r,t) 中的的 (s,r) 对，这些 (s, r) 对组成的序列输入 transformer encoder
 
-3. 为上一步的序列中的 s, r 生成一个相对低维的嵌入向量
+3. 为上一步的序列中的 s, r 生成一个相对低维的向量表示
 
-4. 根据上一步计算出的表示来预测 target 的 score
+4. 根据上一步计算出的表示来预测 target 的 score（即根据 s，r 来预测 target）
 
 5. 把 score 传到 sigmoid 函数里面转换成概率的形式
 
-下面对上述流程中的一些步骤详细说明:
+形式化的说，输出的矩阵表示 $H_o =  FFN(MultiH(Q, K, V ))$
 
-(1) 步就是做一个初始化，给每个实体和联系初始化一个指定维度的向量。
- 
+其中，$MultiH(Q, K, V ) = [H_1, . . . , H_h]W_O$, $H_i = softmax(\frac{Q_iK_i^T}{\sqrt{d_k}})V_i$,
+$FFN(x) = max(0, xW_1 + b_1)W_2 + b_2$
+
+$Q_i = QW^Q_i, K_i = KW_i^K, V_i = VW^V_i$
+
+训练阶段：
+
+使用  reciprocal learning，交叉熵损失函数。
+
+![](./loss.png)
+
+其中 $\phi$ 有两个选择，本文默认的选择是 TwoMult
+
+TwoMult: 
+$\phi(s, r, t) = \widetilde{e_r}^T e_t$
+
+TuckER:
+$\phi(s, r, t) = W_c × 1 \widetilde{e_s} ×2 \widetilde{e_r} ×3 \widetilde{e_t}$
+
+#### 框架图
+
+![](./arch.png)
 
 ## 评价指标以及计算公式
 

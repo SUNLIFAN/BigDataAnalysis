@@ -16,8 +16,7 @@
 
 现有的在知识图谱上的链接预测方法主要分布在两个大方向: 基于嵌入（用向量来表示实体）的方法和基于神经网络的方法。基于嵌入的方法先把一个嵌入向量和每个实体和关系关联起来，一般是在欧几里得空间，复空间或者双曲空间。接着一些方法学习源实体和目的实体之间的线性变换，在这过程中考虑他们之间的联系 (Bordes et al.,2013; Wang et al., 2014; Sun et al., 2019; Balazevic et al., 2019; Chami et al., 2020),；另一些方法匹配实体的潜在语义信息和联系 (Nickel et al., 2011; Yang et al.,2015; Trouillon et al., 2016; Kazemi and Poole, 2018; Lacroix et al., 2018; ZHANG et al., 2019)。基于嵌入的方法需要高维的表示来有效的编码知识图谱中的全部信息。因此，他们在处理现实世界中的大的知识图谱的时候会碰到可扩展性的问题。
 
-神经网络方法  (Socher et al., 2013; Schlichtkrull et al., 2018;
-Dettmers et al., 2018; Bansal et al., 2019; Balaževi´c et al., 2019; Yao et al., 2019; Wang et al.,2019; Vashishth et al., 2020a; Chen et al., 2021) 通过把一些知识存储在模型的自由的参数里面来让模型知识图谱共享来丰富表示的方法。然而，现有的神经网络方法也是通过提高维度的方式来获得最好的结果。因此，降低维度严重损害了神经网络方法和嵌入方法的效果，这里就需要由模型来填补这个空缺。
+神经网络方法  (Socher et al., 2013; Schlichtkrull et al., 2018;Dettmers et al., 2018; Bansal et al., 2019; Balaževi´c et al., 2019; Yao et al., 2019; Wang et al.,2019; Vashishth et al., 2020a; Chen et al., 2021) 通过把一些知识存储在模型的自由的参数里面来让模型知识图谱共享来丰富表示的方法。然而，现有的神经网络方法也是通过提高维度的方式来获得最好的结果。因此，降低维度严重损害了神经网络方法和嵌入方法的效果，这里就需要由模型来填补这个空缺。
 
 受到近期的基于 transformer 的工作 (Vaswani et al., 2017) 的进展的启发，一些工作 CoKE (Wang et al., 2019) and HittER (Chen et al., 2021) 通过用 transformer 作为知识图谱的编码器取得了很好的效果。然而这些模型也用了高维的嵌入来获得较好的效果因此也有可扩展性的问题。还有，他们都使用了很大的模型，提供了太多的自由参数来存储信息，因此显著提高了时间和空间复杂度。
 
@@ -40,11 +39,23 @@ Dettmers et al., 2018; Bansal et al., 2019; Balaževi´c et al., 2019; Yao et al
 
 ## 评价指标以及计算公式
 
-Mean Reciprocal Rate and  Hits@k ratios, both with filtered setting
+Mean Reciprocal Rate
 
-//TODO: formula
+![](https://images2018.cnblogs.com/blog/818082/201807/818082-20180714163214963-207390902.png)
+
+reciprocal rank 是指，第一个正确答案的排名的倒数。MRR是指多个查询语句的排名倒数的均值。其中 $rank_i$ 表示第i个查询语句的第一个正确答案的排名。
 
 ## 对比方法及引用出处
+
+(1)ConvE: Tim Dettmers, Pasquale Minervini, Pontus Stenetorp, and Sebastian Riedel. Convolutional 2d
+knowledge graph embeddings. In Thirty-second AAAI conference on artificial intelligence, 2018.
+(2)A2N: Trapit Bansal, Da-Cheng Juan, Sujith Ravi, and Andrew McCallum. A2n: Attending to neighbors
+for knowledge graph inference. In Proceedings of the 57th Annual Meeting of the Association for
+Computational Linguistics, pages 4387–4392, 2019.
+(3)CoKE: Quan Wang, Pingping Huang, Haifeng Wang, Songtai Dai, Wenbin Jiang, Jing Liu, Yajuan Lyu, and Hua Wu. Coke: Contextualized knowledge graph embedding. arXiv:1911.02168, 2019
+(4)HittER: Sanxing Chen, Xiaodong Liu, Jianfeng Gao, Jian Jiao, Ruofei Zhang, and Yangfeng Ji. Hitter: Hierarchical transformers for knowledge graph embeddings. In Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing (EMNLP), 2021.
+(5)TuckER: Ivana Balazevic, Carl Allen, and Timothy Hospedales. TuckER: Tensor factorization for knowledge graph completion. In Proceedings of the 2019 Conference on Empirical Methods in Natural Language Processing and the 9th International Joint Conference on Natural Language Processing (EMNLP-IJCNLP), pages 5185–5194, 2019.
+(6)RotatE: Zhiqing Sun, Zhi-Hong Deng, Jian-Yun Nie, Jian Tang. RotatE: Knowledge Graph Embedding by Relational Rotation in Complex Space
 
 ## 结果
 
@@ -65,3 +76,6 @@ Epoch 0105 | Loss 0.0010575 | Best MRR 0.3369 | Best epoch 0104
 
 d = 32:
 Epoch 0105 | Loss 0.0010794 | Best MRR 0.3175 | Best epoch 0105
+
+训练日志见本文件夹下的 log-d32,log-d64, log-d100
+

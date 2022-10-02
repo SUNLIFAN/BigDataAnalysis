@@ -42,9 +42,26 @@ Dettmers et al., 2018; Bansal et al., 2019; Balaževi´c et al., 2019; Yao et al
 
 Mean Reciprocal Rate and  Hits@k ratios, both with filtered setting
 
-
+//TODO: formula
 
 ## 对比方法及引用出处
 
 ## 结果
 
+我在  FB15k-237 数据集上进行了一组实验，超参数的设置同文章中的如下表格
+
+![](./hps.png)
+
+由于资源限制，每个设置下我只跑了 105 epoch，取得了和文章中相近的结果。(文章结果如下图)
+
+![](./res.png)
+
+而我的结果如下:
+d = 100:
+Epoch 0105 | Loss 0.0010488 | Best MRR 0.3422 | Best epoch 0104
+
+d = 64:
+Epoch 0105 | Loss 0.0010575 | Best MRR 0.3369 | Best epoch 0104
+
+d = 32:
+Epoch 0105 | Loss 0.0010794 | Best MRR 0.3175 | Best epoch 0105

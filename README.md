@@ -21,5 +21,15 @@ BigDataAnalysis, 2022 Fall
 
 用 weka 做聚类
 
+## assignment6
 
+使用 Kafka 做消息传递
+
+## assignment7
+
+使用 flink 做 wordcount
+
+## assignment8
+
+在一个 toy dataset 上面做推荐系统
 

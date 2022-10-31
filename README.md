@@ -8,3 +8,8 @@ BigDataAnalysis, 2022 Fall
 ## assignment2
 
 复现链接预测论文
+
+## assignment3
+
+用 weka 做数据降维
+

@@ -13,3 +13,9 @@ BigDataAnalysis, 2022 Fall
 
 用 weka 做数据降维
 
+## assignmen4
+
+用 weka 做分类
+
+
+

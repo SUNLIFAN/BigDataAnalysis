@@ -17,5 +17,9 @@ BigDataAnalysis, 2022 Fall
 
 用 weka 做分类
 
+## assignment5
+
+用 weka 做聚类
+
 
 

@@ -1,0 +1,137 @@
+2022-10-01,21:19:20 [INFO] train shape: (544230, 3), valid shape: (17535, 3), test shape: (20466, 3)
+2022-10-01,21:19:20 [INFO] num entities: 14541, num relations: 237
+2022-10-01,21:19:24 [INFO] start training...
+2022-10-01,21:21:08 [INFO] Epoch 0005 | Loss 0.0012805 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:22:53 [INFO] Epoch 0010 | Loss 0.0012630 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:24:38 [INFO] Epoch 0015 | Loss 0.0012400 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:26:23 [INFO] Epoch 0020 | Loss 0.0012051 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:28:08 [INFO] Epoch 0025 | Loss 0.0011733 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:29:53 [INFO] Epoch 0030 | Loss 0.0011452 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:31:38 [INFO] Epoch 0035 | Loss 0.0011207 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:33:23 [INFO] Epoch 0040 | Loss 0.0011021 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:35:08 [INFO] Epoch 0045 | Loss 0.0010893 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:36:53 [INFO] Epoch 0050 | Loss 0.0010810 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:38:39 [INFO] Epoch 0055 | Loss 0.0010749 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:40:24 [INFO] Epoch 0060 | Loss 0.0010722 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:42:09 [INFO] Epoch 0065 | Loss 0.0010679 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:43:54 [INFO] Epoch 0070 | Loss 0.0010658 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:45:39 [INFO] Epoch 0075 | Loss 0.0010642 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:47:24 [INFO] Epoch 0080 | Loss 0.0010633 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:49:10 [INFO] Epoch 0085 | Loss 0.0010610 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:50:56 [INFO] Epoch 0090 | Loss 0.0010604 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:52:41 [INFO] Epoch 0095 | Loss 0.0010591 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:54:27 [INFO] Epoch 0100 | Loss 0.0010589 | Best MRR 0.0000 | Best epoch 0000
+2022-10-01,21:54:27 [INFO] start eval
+2022-10-01,21:54:27 [INFO] Perturbing subject...
+2022-10-01,21:54:27 [INFO] test triplet 0 / 20466, acc 0.0
+2022-10-01,21:55:34 [INFO] test triplet 10000 / 20466, acc 0.0
+2022-10-01,21:56:42 [INFO] test triplet 20000 / 20466, acc 0.0
+2022-10-01,21:56:45 [INFO] MRR-S (filtered): 0.234847
+2022-10-01,21:56:45 [INFO] Hits-S (filtered) @ 1: 0.149223
+2022-10-01,21:56:46 [INFO] Hits-S (filtered) @ 3: 0.259943
+2022-10-01,21:56:46 [INFO] Hits-S (filtered) @ 10: 0.406968
+2022-10-01,21:56:46 [INFO] Perturbing object...
+2022-10-01,21:56:46 [INFO] test triplet 0 / 20466, acc 0.0
+2022-10-01,21:57:52 [INFO] test triplet 10000 / 20466, acc 0.0
+2022-10-01,21:59:00 [INFO] test triplet 20000 / 20466, acc 0.0
+2022-10-01,21:59:03 [INFO] MRR-O (filtered): 0.435960
+2022-10-01,21:59:03 [INFO] Hits-O (filtered) @ 1: 0.342031
+2022-10-01,21:59:03 [INFO] Hits-O (filtered) @ 3: 0.477719
+2022-10-01,21:59:03 [INFO] Hits-O (filtered) @ 10: 0.622007
+2022-10-01,21:59:03 [INFO] MRR (filtered): 0.335403
+2022-10-01,21:59:03 [INFO] Hits (filtered) @ 1: 0.245627
+2022-10-01,21:59:03 [INFO] Hits (filtered) @ 3: 0.368831
+2022-10-01,21:59:03 [INFO] Hits (filtered) @ 10: 0.514487
+2022-10-01,21:59:03 [INFO] Epoch 0100 | Loss 0.0010589 | Best MRR 0.3354 | Best epoch 0100
+2022-10-01,21:59:03 [INFO] eval done!
+2022-10-01,21:59:24 [INFO] start eval
+2022-10-01,21:59:24 [INFO] Perturbing subject...
+2022-10-01,21:59:24 [INFO] test triplet 0 / 20466, acc 0.0
+2022-10-01,22:00:38 [INFO] test triplet 10000 / 20466, acc 0.0
+2022-10-01,22:01:48 [INFO] test triplet 20000 / 20466, acc 0.0
+2022-10-01,22:01:51 [INFO] MRR-S (filtered): 0.233833
+2022-10-01,22:01:51 [INFO] Hits-S (filtered) @ 1: 0.148197
+2022-10-01,22:01:51 [INFO] Hits-S (filtered) @ 3: 0.259357
+2022-10-01,22:01:51 [INFO] Hits-S (filtered) @ 10: 0.406039
+2022-10-01,22:01:51 [INFO] Perturbing object...
+2022-10-01,22:01:51 [INFO] test triplet 0 / 20466, acc 0.0
+2022-10-01,22:02:59 [INFO] test triplet 10000 / 20466, acc 0.0
+2022-10-01,22:04:07 [INFO] test triplet 20000 / 20466, acc 0.0
+2022-10-01,22:04:11 [INFO] MRR-O (filtered): 0.436455
+2022-10-01,22:04:11 [INFO] Hits-O (filtered) @ 1: 0.342470
+2022-10-01,22:04:11 [INFO] Hits-O (filtered) @ 3: 0.479429
+2022-10-01,22:04:11 [INFO] Hits-O (filtered) @ 10: 0.621421
+2022-10-01,22:04:11 [INFO] MRR (filtered): 0.335144
+2022-10-01,22:04:11 [INFO] Hits (filtered) @ 1: 0.245334
+2022-10-01,22:04:11 [INFO] Hits (filtered) @ 3: 0.369393
+2022-10-01,22:04:11 [INFO] Hits (filtered) @ 10: 0.513730
+2022-10-01,22:04:11 [INFO] eval done!
+2022-10-01,22:04:31 [INFO] start eval
+2022-10-01,22:04:32 [INFO] Perturbing subject...
+2022-10-01,22:04:32 [INFO] test triplet 0 / 20466, acc 0.0
+2022-10-01,22:05:40 [INFO] test triplet 10000 / 20466, acc 0.0
+2022-10-01,22:06:49 [INFO] test triplet 20000 / 20466, acc 0.0
+2022-10-01,22:06:53 [INFO] MRR-S (filtered): 0.233628
+2022-10-01,22:06:53 [INFO] Hits-S (filtered) @ 1: 0.148148
+2022-10-01,22:06:53 [INFO] Hits-S (filtered) @ 3: 0.257549
+2022-10-01,22:06:53 [INFO] Hits-S (filtered) @ 10: 0.407847
+2022-10-01,22:06:53 [INFO] Perturbing object...
+2022-10-01,22:06:53 [INFO] test triplet 0 / 20466, acc 0.0
+2022-10-01,22:08:00 [INFO] test triplet 10000 / 20466, acc 0.0
+2022-10-01,22:09:07 [INFO] test triplet 20000 / 20466, acc 0.0
+2022-10-01,22:09:10 [INFO] MRR-O (filtered): 0.436545
+2022-10-01,22:09:10 [INFO] Hits-O (filtered) @ 1: 0.342812
+2022-10-01,22:09:10 [INFO] Hits-O (filtered) @ 3: 0.478990
+2022-10-01,22:09:10 [INFO] Hits-O (filtered) @ 10: 0.621079
+2022-10-01,22:09:10 [INFO] MRR (filtered): 0.335086
+2022-10-01,22:09:10 [INFO] Hits (filtered) @ 1: 0.245480
+2022-10-01,22:09:10 [INFO] Hits (filtered) @ 3: 0.368269
+2022-10-01,22:09:10 [INFO] Hits (filtered) @ 10: 0.514463
+2022-10-01,22:09:10 [INFO] eval done!
+2022-10-01,22:09:31 [INFO] start eval
+2022-10-01,22:09:31 [INFO] Perturbing subject...
+2022-10-01,22:09:31 [INFO] test triplet 0 / 20466, acc 0.0
+2022-10-01,22:10:41 [INFO] test triplet 10000 / 20466, acc 0.0
+2022-10-01,22:11:50 [INFO] test triplet 20000 / 20466, acc 0.0
+2022-10-01,22:11:53 [INFO] MRR-S (filtered): 0.235552
+2022-10-01,22:11:53 [INFO] Hits-S (filtered) @ 1: 0.150494
+2022-10-01,22:11:53 [INFO] Hits-S (filtered) @ 3: 0.258868
+2022-10-01,22:11:53 [INFO] Hits-S (filtered) @ 10: 0.405062
+2022-10-01,22:11:53 [INFO] Perturbing object...
+2022-10-01,22:11:53 [INFO] test triplet 0 / 20466, acc 0.0
+2022-10-01,22:13:00 [INFO] test triplet 10000 / 20466, acc 0.0
+2022-10-01,22:14:08 [INFO] test triplet 20000 / 20466, acc 0.0
+2022-10-01,22:14:11 [INFO] MRR-O (filtered): 0.436130
+2022-10-01,22:14:11 [INFO] Hits-O (filtered) @ 1: 0.342226
+2022-10-01,22:14:11 [INFO] Hits-O (filtered) @ 3: 0.478354
+2022-10-01,22:14:11 [INFO] Hits-O (filtered) @ 10: 0.622105
+2022-10-01,22:14:11 [INFO] MRR (filtered): 0.335841
+2022-10-01,22:14:11 [INFO] Hits (filtered) @ 1: 0.246360
+2022-10-01,22:14:11 [INFO] Hits (filtered) @ 3: 0.368611
+2022-10-01,22:14:11 [INFO] Hits (filtered) @ 10: 0.513583
+2022-10-01,22:14:11 [INFO] Epoch 0103 | Loss 0.0010593 | Best MRR 0.3358 | Best epoch 0103
+2022-10-01,22:14:11 [INFO] eval done!
+2022-10-01,22:14:32 [INFO] start eval
+2022-10-01,22:14:32 [INFO] Perturbing subject...
+2022-10-01,22:14:32 [INFO] test triplet 0 / 20466, acc 0.0
+2022-10-01,22:15:39 [INFO] test triplet 10000 / 20466, acc 0.0
+2022-10-01,22:16:46 [INFO] test triplet 20000 / 20466, acc 0.0
+2022-10-01,22:16:49 [INFO] MRR-S (filtered): 0.236765
+2022-10-01,22:16:49 [INFO] Hits-S (filtered) @ 1: 0.151422
+2022-10-01,22:16:49 [INFO] Hits-S (filtered) @ 3: 0.261751
+2022-10-01,22:16:49 [INFO] Hits-S (filtered) @ 10: 0.407261
+2022-10-01,22:16:49 [INFO] Perturbing object...
+2022-10-01,22:16:49 [INFO] test triplet 0 / 20466, acc 0.0
+2022-10-01,22:17:55 [INFO] test triplet 10000 / 20466, acc 0.0
+2022-10-01,22:19:00 [INFO] test triplet 20000 / 20466, acc 0.0
+2022-10-01,22:19:03 [INFO] MRR-O (filtered): 0.436972
+2022-10-01,22:19:03 [INFO] Hits-O (filtered) @ 1: 0.342959
+2022-10-01,22:19:03 [INFO] Hits-O (filtered) @ 3: 0.478501
+2022-10-01,22:19:03 [INFO] Hits-O (filtered) @ 10: 0.622398
+2022-10-01,22:19:03 [INFO] MRR (filtered): 0.336869
+2022-10-01,22:19:03 [INFO] Hits (filtered) @ 1: 0.247190
+2022-10-01,22:19:03 [INFO] Hits (filtered) @ 3: 0.370126
+2022-10-01,22:19:03 [INFO] Hits (filtered) @ 10: 0.514829
+2022-10-01,22:19:03 [INFO] Epoch 0104 | Loss 0.0010585 | Best MRR 0.3369 | Best epoch 0104
+2022-10-01,22:19:03 [INFO] eval done!
+2022-10-01,22:19:24 [INFO] Epoch 0105 | Loss 0.0010575 | Best MRR 0.3369 | Best epoch 0104
